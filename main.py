@@ -67,13 +67,15 @@ Rules:
         """
 
         try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt
-            )
+            with st.spinner(f"asking your question from {personality}"):
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt
+                )
 
-            st.subheader("AI Response")
-            st.write(response.text)
+                st.subheader("AI Response")
+                st.success(f"Responded by a {personality}")
+                st.write(response.text)
 
         except Exception as e:
             st.error(f"Error: {e}")
