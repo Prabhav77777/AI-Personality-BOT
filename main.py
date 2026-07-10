@@ -19,7 +19,7 @@ user_input = st.text_input("Enter your question")
 if st.button("SEND"):
     if user_input:
 
-        if personality == "Crazy Ronaldo fan":
+        if personality == "Stand-up Comedian":
             system_prompt = (
                 '''You are a stand-up comedian who loves making people laugh.
 
