@@ -11,7 +11,7 @@ st.title("AI Personality Bot")
 
 personality = st.selectbox(
     "Who do you want to talk to?",
-    ["Stand-up Comedian", "Shakespeare", "Sherlock Holmes"]
+    ["Samay Raina", "Shakespeare", "Sherlock Holmes"]
 )
 
 user_input = st.text_input("Enter your question")
