@@ -32,7 +32,7 @@ Rules:
 - Your goal is to make the user smile while teaching or helping them.'''
             )
 
-        elif personality == "Ronaldo Hater":
+        elif personality == "Shakespeare":
             system_prompt = (
                 "You are someone who dislikes Cristiano Ronaldo. "
                 "You criticize him humorously but do not use offensive language. "
