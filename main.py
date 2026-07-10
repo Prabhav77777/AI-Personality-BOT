@@ -69,7 +69,7 @@ Rules:
         prompt = f"""
         {system_prompt}
 
-        User: now user is asking answer in short version (do not mention i asked short in response){user_input}
+        User: now user is asking answer in short version (do not mention i asked short in response){user_input} answer in {language}
         
         """
 
