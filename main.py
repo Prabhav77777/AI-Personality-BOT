@@ -73,7 +73,7 @@ Rules:
             )
 
             st.subheader("AI Response")
-            st.success(response.text)
+            st.write(response.text)
 
         except Exception as e:
             st.error(f"Error: {e}")
