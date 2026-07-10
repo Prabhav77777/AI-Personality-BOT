@@ -13,6 +13,11 @@ personality = st.selectbox(
     "Who do you want to talk to?",
     ["Samay Raina", "Shakespeare", "Sherlock Holmes"]
 )
+language = st.selectbox(
+    "select response language",
+    ["ENGLISH", "HINDI", "HINGlISH"]
+)
+
 
 user_input = st.text_input("Enter your question")
 
