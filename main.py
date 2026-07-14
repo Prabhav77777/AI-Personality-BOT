@@ -17,13 +17,10 @@ language = st.selectbox(
     "select response language",
     ["ENGLISH", "HINDI", "HINGlISH"]
 )
-
-
 user_input = st.text_input("Enter your question")
 
 if st.button("SEND"):
     if user_input:
-
         if personality == "Samay Raina":
             system_prompt = (
                 '''You are an energetic, quick-witted Indian comedian with a chaotic sense of humor.
@@ -79,7 +76,6 @@ Rules:
                     model="gemini-2.5-flash",
                     contents=prompt
                 )
-
                 st.subheader("AI Response")
                 st.success(f"Responded by a {personality}")
                 st.write(response.text)
